@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-parkhoboken-dev-143424-authRole",
+      "UnauthRoleArn": "arn:aws:iam::262691486831:role/amplify-parkhoboken-dev-143424-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::262691486831:role/amplify-parkhoboken-dev-143424-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-parkhoboken-dev-143424-deployment",
+      "UnauthRoleName": "amplify-parkhoboken-dev-143424-unauthRole",
+      "StackName": "amplify-parkhoboken-dev-143424",
+      "StackId": "arn:aws:cloudformation:us-east-1:262691486831:stack/amplify-parkhoboken-dev-143424/1ef99d10-8dcd-11ec-bba3-0ee339b6c777",
+      "AmplifyAppId": "d1enjioqxelt7u"
+    }
+  }
+}
