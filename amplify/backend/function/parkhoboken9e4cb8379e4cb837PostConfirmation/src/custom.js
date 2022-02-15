@@ -1,4 +1,4 @@
-const aws = require('aws')
+const aws = require('aws-sdk')
 const ddb = newaws.DynamoDb()
 
 exports.hanlder = async (event, context) => { 
@@ -14,18 +14,22 @@ exports.hanlder = async (event, context) => {
   const params = { 
     Item: { 
       'id': {S: event.request.userAttributes.sub} ,
-      '__typename': {S: 'User'}
-      'username': , 
-      'email':,
-      'createdAt':,
-      'updatedAt':,
+      '__typename': {S: 'User'},
+      'username': {S: event.userName}, 
+      'email': {S: event.request.userAttributes.email},
+      'createdAt': {S: date.toISOString() },
+      'updatedAt': {S: date.toISOString() },
+    },
+    TableName: process.env.USERTABLE,
+  }
 
+  try{
+    await ddb.putItem(params).promise();
+    console.log("Success");
+  } catch(e){
+    console.log("Error", e);
+  }
 
-    
-
-
-  },
-  TableName: proccess.env.USERTABLE,
-}
+  context.done(null, event);
 
 }

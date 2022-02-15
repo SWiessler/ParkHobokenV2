@@ -12,12 +12,13 @@ import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 
 import Router from './src/navigation/Root';
-import { Amplify } from 'aws-amplify';
-
+import Amplify, { Auth } from 'aws-amplify';
+import { withAuthenticator } from 'aws-amplify-react-native';
 navigator.geolocation = require('@react-native-community/geolocation');
 
-import config from './aws-exports';
-Amplify.configure(config);
+import awsconfig from './src/aws-exports';
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
 
 
 const App: () => React$Node = () => {
@@ -63,4 +64,4 @@ const App: () => React$Node = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

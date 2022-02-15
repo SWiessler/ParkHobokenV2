@@ -2,8 +2,9 @@ import React from "react";
 import { View, Dimensions } from "react-native";
 
 import HomeMap from '../../components/HomeMap';
-import CovidMessage from '../../components/CovidMessage';
+// import CovidMessage from '../../components/CovidMessage';
 import HomeSearch from '../../components/HomeSearch';
+import CustomDrawer from "../../navigation/CustomDrawer";
 
 const HomeScreen = (props) => {
   return (
@@ -11,9 +12,6 @@ const HomeScreen = (props) => {
       <View style={{height: Dimensions.get('window').height - 400}}>
         <HomeMap />
       </View>
-
-      {/*  Covid Message*/}
-      <CovidMessage />
 
       {/*  Bottom Comp*/}
       <HomeSearch />
