@@ -10,6 +10,14 @@
       "StackName": "amplify-parkhoboken-dev-143424",
       "StackId": "arn:aws:cloudformation:us-east-1:262691486831:stack/amplify-parkhoboken-dev-143424/1ef99d10-8dcd-11ec-bba3-0ee339b6c777",
       "AmplifyAppId": "d1enjioqxelt7u"
+    },
+    "categories": {
+      "auth": {
+        "parkhoboken9e4cb8379e4cb837": {}
+      },
+      "function": {
+        "parkhoboken9e4cb8379e4cb837PostConfirmation": {}
+      }
     }
   }
 }

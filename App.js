@@ -12,8 +12,13 @@ import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 
 import Router from './src/navigation/Root';
+import { Amplify } from 'aws-amplify';
 
 navigator.geolocation = require('@react-native-community/geolocation');
+
+import config from './aws-exports';
+Amplify.configure(config);
+
 
 const App: () => React$Node = () => {
 
