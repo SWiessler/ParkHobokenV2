@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-parkhoboken-dev-143424-authRole",
+      "UnauthRoleArn": "arn:aws:iam::262691486831:role/amplify-parkhoboken-dev-143424-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::262691486831:role/amplify-parkhoboken-dev-143424-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-parkhoboken-dev-143424-deployment",
+      "UnauthRoleName": "amplify-parkhoboken-dev-143424-unauthRole",
+      "StackName": "amplify-parkhoboken-dev-143424",
+      "StackId": "arn:aws:cloudformation:us-east-1:262691486831:stack/amplify-parkhoboken-dev-143424/1ef99d10-8dcd-11ec-bba3-0ee339b6c777",
+      "AmplifyAppId": "d1enjioqxelt7u",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-parkhoboken-dev-143424-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "parkhoboken9e4cb8379e4cb837": {}
+      },
+      "function": {
+        "parkhoboken9e4cb8379e4cb837PostConfirmation": {
+          "deploymentBucketName": "amplify-parkhoboken-dev-143424-deployment",
+          "s3Key": "amplify-builds/parkhoboken9e4cb8379e4cb837PostConfirmation-476c6b3755644d6b5062-build.zip"
+        }
+      }
+    }
+  }
+}

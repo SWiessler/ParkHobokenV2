@@ -28,7 +28,11 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+<<<<<<< HEAD:UserApp/ios/UberClone/AppDelegate.m
 [GMSServices provideAPIKey:@"AIzaSyDFhFUaYpyAjNE4Eq-sWCGWjrr6kyGnhbQ"];
+=======
+[GMSServices provideAPIKey:@"AIzaSyBWXPpJy9-ZMer3ahmL5wMI2UjX9NZv5C4"];
+>>>>>>> part-2:ios/UberClone/AppDelegate.m
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif

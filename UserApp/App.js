@@ -13,12 +13,20 @@ import Geolocation from '@react-native-community/geolocation';
 import { withAuthenticator } from 'aws-amplify-react-native'
 
 import Router from './src/navigation/Root';
-
+import Amplify, { Auth } from 'aws-amplify';
+import { withAuthenticator } from 'aws-amplify-react-native';
 navigator.geolocation = require('@react-native-community/geolocation');
 
+<<<<<<< HEAD:UserApp/App.js
 import Amplify from 'aws-amplify'
 import config from './aws-exports'
 Amplify.configure(config)
+=======
+import awsconfig from './src/aws-exports';
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
+
+>>>>>>> part-2:App.js
 
 const App: () => React$Node = () => {
 

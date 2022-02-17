@@ -2,7 +2,11 @@ import React from "react";
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 
+<<<<<<< HEAD:UserApp/src/components/RouteMap/index.js
 const GOOGLE_MAPS_APIKEY = 'AIzaSyDFhFUaYpyAjNE4Eq-sWCGWjrr6kyGnhbQ';
+=======
+const GOOGLE_MAPS_APIKEY = 'AIzaSyBWXPpJy9-ZMer3ahmL5wMI2UjX9NZv5C4';
+>>>>>>> part-2:src/components/RouteMap/index.js
 
 const RouteMap = ({ origin, destination }) => {
 
