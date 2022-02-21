@@ -21,11 +21,11 @@ const HomeSearch = (props) => {
       <Pressable onPress={goToSearch} style={styles.inputBox}>
         <Text style={styles.inputText}>Where To?</Text>
 
-        <View style={styles.timeContainer}>
+        {/* <View style={styles.timeContainer}>
           <AntDesign name={'clockcircle'} size={16} color={'#535353'} />
           <Text>Now</Text>
           <MaterialIcons name={'keyboard-arrow-down'} size={16} />
-        </View>
+        </View> */}
       </Pressable>
 
       {/* Previous destination */}
@@ -33,16 +33,16 @@ const HomeSearch = (props) => {
         <View style={styles.iconContainer}>
           <AntDesign name={'clockcircle'} size={20} color={'#ffffff'} />
         </View>
-        <Text style={styles.destinationText}>Spin Nightclub</Text>
+        <Text style={styles.destinationText}>Trader Joe's</Text>
       </View>
 
       {/* Home destination */}
-      <View style={styles.row}>
+      {/* <View style={styles.row}>
         <View style={[styles.iconContainer, {backgroundColor: '#218cff'}]}>
           <Entypo name={'home'} size={20} color={'#ffffff'} />
         </View>
         <Text style={styles.destinationText}>Spin Nightclub</Text>
-      </View>
+      </View> */}
     </View>
   );
 };

@@ -31,10 +31,6 @@ const RootNavigator = (props) => {
           {() => <DummyScreen name={"Help"} />}
         </Drawer.Screen>
 
-        <Drawer.Screen name="Wallet">
-          {() => <DummyScreen name={"Wallet"} />}
-        </Drawer.Screen>
-
         <Drawer.Screen name="Settings">
           {() => <DummyScreen name={"Settings"} />}
         </Drawer.Screen>
