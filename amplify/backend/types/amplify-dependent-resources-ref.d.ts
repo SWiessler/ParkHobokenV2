@@ -1,14 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
-    "function": {
-        "parkhoboken9e4cb8379e4cb837PostConfirmation": {
-            "Name": "string",
-            "Arn": "string",
-            "LambdaExecutionRole": "string",
-            "Region": "string"
-        }
-    },
     "auth": {
-        "parkhoboken9e4cb8379e4cb837": {
+        "parkhobokenV2auth": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -23,6 +15,14 @@ export type AmplifyDependentResourcesAttributes = {
             "GraphQLAPIKeyOutput": "string",
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
+        }
+    },
+    "function": {
+        "parkhobokenV2lambdafunction": {
+            "Name": "string",
+            "Arn": "string",
+            "Region": "string",
+            "LambdaExecutionRole": "string"
         }
     }
 }

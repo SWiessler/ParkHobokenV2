@@ -6,7 +6,9 @@
     "gqlSchemaPath": "/Users/scrooge/Documents/ParkHoboken/UberClone/amplify/backend/api/parkhoboken/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "expirationTime": 7
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-03-01T22:16:32.481Z",
+      "keyDescription": "public"
     }
   }
 }

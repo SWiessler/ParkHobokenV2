@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "parkhoboken9e4cb837_identitypool_9e4cb837",
+    "identityPoolName": "parkhobokenV2identitypool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "parkho9e4cb837",
-    "userPoolName": "ParkHoboken",
+    "resourceNameTruncated": "parkhoddcc25ff",
+    "userPoolName": "parkhobokenV2userpool",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "parkho9e4cb837_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "parkhoddcc25ff_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "9e4cb837",
-    "resourceName": "parkhoboken9e4cb8379e4cb837",
+    "sharedId": "ddcc25ff",
+    "resourceName": "parkhobokenV2auth",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "manual",
     "thirdPartyAuth": false,
@@ -43,11 +43,7 @@
     ],
     "userPoolGroups": false,
     "adminQueries": false,
-    "triggers": {
-      "PostConfirmation": [
-        "custom"
-      ]
-    },
+    "triggers": {},
     "hostedUI": false,
     "userPoolGroupList": [],
     "serviceName": "Cognito",
