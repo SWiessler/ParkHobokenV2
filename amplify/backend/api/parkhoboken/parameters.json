@@ -1,5 +1,0 @@
-{
-  "AppSyncApiName": "parkhoboken",
-  "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
-}
