@@ -10,6 +10,7 @@ export const createUser = /* GraphQL */ `
       id
       username
       email
+      departing
       createdAt
       updatedAt
     }
@@ -24,6 +25,7 @@ export const updateUser = /* GraphQL */ `
       id
       username
       email
+      departing
       createdAt
       updatedAt
     }
@@ -38,6 +40,7 @@ export const deleteUser = /* GraphQL */ `
       id
       username
       email
+      departing
       createdAt
       updatedAt
     }

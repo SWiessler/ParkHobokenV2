@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Dimensions } from "react-native";
+import { View, Dimensions, Button, Alert} from "react-native";
 
 import HomeMap from '../../components/HomeMap';
 // import CovidMessage from '../../components/CovidMessage';
@@ -15,6 +15,12 @@ const HomeScreen = (props) => {
 
       {/*  Bottom Comp*/}
       <HomeSearch />
+      <Button
+      title="I'm Departing!"
+      color="#800000"
+      onPress={() => Alert.alert('Button with adjusted color pressed')}
+      />
+    
     </View>
   );
 };

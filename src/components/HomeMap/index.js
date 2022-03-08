@@ -1,10 +1,14 @@
 import React from "react";
-import { Image, FlatList } from "react-native";
+import { Image, FlatList} from "react-native";
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
-
+import Auth from '@aws-amplify/auth';
 import cars from '../../assets/data/cars';
 
+
 const HomeMap = (props) => {
+  Auth.currentAuthenticatedUser().then((user) => {
+    console.log('user email = ' + user.attributes.email);
+  });
 
   const getImage = (type) => {
     if (type === 'UberX') {

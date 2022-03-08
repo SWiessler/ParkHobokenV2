@@ -12,12 +12,14 @@ var ddb = new aws.DynamoDB()
 exports.handler = async (event, context) => {
     let date = new Date()
     if (event.request.userAttributes.sub) {
+        console.log("here")
         let params = {
             Item: {
                 'id': {S: event.request.userAttributes.sub},
                 '__typename': {S: 'User'},
                 'username': {S: event.userName},
                 'email': {S: event.request.userAttributes.email},
+                'departing': {S: false},
                 'createdAt': {S: date.toISOString()},
                 'updatedAt': {S: date.toISOString()},
             },
