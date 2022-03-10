@@ -6,5 +6,5 @@ type User @model {
   id: ID!
   username: String!
   email: String!
-  departing: Boolean
+  departing: String!
 }
