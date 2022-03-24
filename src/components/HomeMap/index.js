@@ -6,9 +6,30 @@ import cars from '../../assets/data/cars';
 
 
 const HomeMap = (props) => {
+
+  /**var globalUserEmail;
   Auth.currentAuthenticatedUser().then((user) => {
-    console.log('user email = ' + user.attributes.email);
+    globalUserEmail = user.attributes.email;
   });
+
+  console.log(globalUserEmail);**/
+
+  // async function User() { 
+  //   try { 
+  //     const loggedInUser = await Auth.currentAuthenticatedUser();
+  //     // console.log(loggedInUser);
+  //     return loggedInUser;
+  //   }
+  //   catch (e) {
+  //     console.log(e.message);
+
+  //   }
+  // }
+  
+  // let globalUserEmail = User();
+  // console.log(globalUserEmail);
+
+
 
   const getImage = (type) => {
     if (type === 'UberX') {

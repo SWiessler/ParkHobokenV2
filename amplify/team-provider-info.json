@@ -18,7 +18,7 @@
       "function": {
         "parkhobokenV2lambdafunction": {
           "deploymentBucketName": "amplify-parkhoboken-dev-162537-deployment",
-          "s3Key": "amplify-builds/parkhobokenV2lambdafunction-542f5143735939664335-build.zip"
+          "s3Key": "amplify-builds/parkhobokenV2lambdafunction-666a513466302b705253-build.zip"
         }
       }
     }

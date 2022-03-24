@@ -42,7 +42,7 @@ const HomeSearch = (props) => {
           <Entypo name={'home'} size={20} color={'#ffffff'} />
         </View>
         <Text style={styles.destinationText}>Spin Nightclub</Text>
-      </View> */}
+      </View> */} 
     </View>
   );
 };

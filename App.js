@@ -18,9 +18,15 @@ import { withAuthenticator } from 'aws-amplify-react-native';
 navigator.geolocation = require('@react-native-community/geolocation');
 
 import awsconfig from './src/aws-exports';
-Amplify.configure(awsconfig);
+// Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
+Amplify.configure({
+  awsconfig,
+  Analytics: { 
+    disabled: true
+  }
+});
 
 const App: () => React$Node = () => {
 
