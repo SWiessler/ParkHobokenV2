@@ -14,7 +14,7 @@ const HomeScreen = (props) => {
       </View>
 
       {/*  Bottom Comp*/}
-      <HomeSearch />
+       <HomeSearch /> 
     </View>
   );
 };
