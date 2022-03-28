@@ -13,12 +13,8 @@ const SearchResults = (props) => {
 
   return (
     <View style={{display: 'flex', justifyContent: 'space-between'}}>
-      <View style={{height: Dimensions.get('window').height - 400}}>
+      <View style={{height: Dimensions.get('window').height}}>
         <RouteMap origin={originPlace} destination={destinationPlace} />
-      </View>
-
-      <View style={{height: 400}}>
-        <UberTypes />
       </View>
     </View>
   );
