@@ -14,25 +14,7 @@ import config from "../../aws-exports";
 Amplify.configure(config);
 
 const HomeScreen = (props) => {
-  // Auth.currentAuthenticatedUser().then((user) => {
-  //   console.log('user email = ' + user.attributes.email);
-  // });
-
-  async function getUserEmail () {
-    try{
-      const user = await Auth.currentUserInfo();
-      return user.attributes.email;
-    }catch(e){
-      console.log(e);
-    }
-
-  }
-// shows getting email outside of func
-  // async function printEmail () {
-  //   console.log( await getUserEmail());
-  // }
-
-  // printEmail();
+  
   
   return (
     <View>
@@ -64,13 +46,45 @@ const HomeScreen = (props) => {
           const userUpdate = await API.graphql({
             query: mutations.updateUser,
             variables: {input: updateUserDetails}
-            // authMode: 'AWS_IAM'
           });
           console.log(JSON.stringify(userUpdate));
         }catch(e){
           console.log(e);
         }
+        // MATCHING INITIAL DEV
+        try{
+          let filter = {
+            departing: {
+                eq: "true" //equals true
+            }
+          };
+          const departers = await API.graphql({
+              query: queries.listUsers,
+              variables: {filter: filter}
+          });
+          filter = {
+            departing: {
+                eq: "false" //equals true
+            }
+          };
+          const arrivers = await API.graphql({
+              query: queries.listUsers,
+              variables: {filter: filter}
+          });
+          // Logging
+          console.log("arrivers:");
+          console.log(JSON.stringify(arrivers));
+          console.log("departers:");
+          console.log(JSON.stringify(departers));
 
+          // if arrivers empty then display alert
+          // todo
+          // if arrivers
+
+          
+        }catch(e){
+          console.log(e);
+        }
       }}
       />
     

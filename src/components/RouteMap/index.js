@@ -30,19 +30,19 @@ const RouteMap = ({ origin, destination }) => {
       <MapViewDirections
         origin={originLoc}
         destination={destinationLoc}
-        apikey={GOOGLE_MAPS_APIKEY}
+        apikey = {GOOGLE_MAPS_APIKEY}
         strokeWidth={5}
         strokeColor="black"
       />
-      <Marker
-        coordinate={origin}
-        title={'Origin'}
+      {/* <Marker
+        coordinate={originLoc}
+        title="origin"
       />
       <Marker
-        coordinate={destination}
-        title={"Destination"}
-      />
-    </MapView>
+        coordinate={destinationLoc}
+        title="destination"
+      /> */}
+      </MapView>
   );
 };
 
