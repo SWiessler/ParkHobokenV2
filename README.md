@@ -11,4 +11,4 @@ To run:
 
 Navigate to src
 
-Nnpm run ios OR npm run android
+npm run ios OR npm run android
