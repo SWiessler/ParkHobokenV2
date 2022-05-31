@@ -9,6 +9,4 @@ pdamiano : android compatible - without beginning algorithm dev
 
 To run: 
 
-Navigate to src
-
 npm run ios OR npm run android
