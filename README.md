@@ -8,5 +8,7 @@ algorithm-dev : most recent, ios compatible, working on matching algorithm on th
 pdamiano : android compatible - without beginning algorithm dev
 
 To run: 
+
 Navigate to src
-npm run ios OR npm run android
+
+Nnpm run ios OR npm run android
